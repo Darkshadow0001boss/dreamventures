@@ -895,12 +895,119 @@
   </div>
 </form>
 </div> -->
+
    
-            <div id="vanta-contact" style="width: 100%; height: 100%; position: relative; border-radius: 10px; overflow: hidden;">
+            <!-- <div id="vanta-contact" style="width: 100%; height: 400; position: relative; border-radius: 10px; overflow: hidden;">
               <h3 style="position: absolute; top: 45%; left: 40%; transform: translate(-50%, -50%); color: white; z-index: 1; text-align: center;">
                 Let’s Connect For a Brighter Future
               </h3>
+            </div> -->
+            <style>
+              #vanta-contact {
+                width: 100%;
+                height: auto;
+                min-height: 300px;
+                max-height: 600px;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+              }
+            
+              #vanta-contact h3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                z-index: 1;
+                text-align: center;
+                font-weight: 600;
+                font-size: 2rem;
+                padding: 0 10px;
+              }
+            
+              @media (max-width: 768px) {
+                #vanta-contact h3 {
+                  font-size: 1.5rem;
+                }
+            
+                #vanta-contact {
+                  height: 40vh;
+                  min-height: 250px;
+                }
+              }
+            
+              @media (max-width: 480px) {
+                #vanta-contact h3 {
+                  font-size: 1.2rem;
+                }
+            
+                #vanta-contact {
+                  height: 35vh;
+                }
+              }
+            </style>
+            
+            <div id="vanta-contact">
+              <h3>Let’s Connect For a Brighter Future</h3>
             </div>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script> -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist//vanta.globe.min.js"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist///vanta.net.min.js"></script>
+            
+            <script>
+              function initVanta() {
+                if (window.VANTA && document.getElementById('vanta-contact')) {
+                  // VANTA.BIRDS({
+                  //   el: "#vanta-contact",
+                  //   mouseControls: true,
+                  //   touchControls: true,
+                  //   gyroControls: false,
+                  //   minHeight: 200.00,
+                  //   minWidth: 200.00,
+                  //   scale: 1.0,
+                  //   scaleMobile: 1.0,
+                  //   backgroundColor: 0x1a1a1a,
+                  //   color1: 0xffd700,
+                  //   color2: 0xda51dd,
+                  //   birdSize: 1.2
+                  // });
+                  VANTA.GLOBE({
+                    el: "#vanta-contact",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0xff3cac,
+                    backgroundColor: 0x0a0a0a,
+                    size: 1.2
+                  });
+                  // VANTA.NET({
+                  //   el: "#vanta-contact",
+                  //   mouseControls: true,
+                  //   touchControls: true,
+                  //   gyroControls: false,
+                  //   minHeight: 200.00,
+                  //   minWidth: 200.00,
+                  //   scale: 1.0,
+                  //   scaleMobile: 1.0,
+                  //   backgroundColor: 0x1a1a1a,
+                  //   color1: 0xffd700,
+                  //   color2: 0xda51dd,
+                  //   birdSize: 1.2
+                  // });
+                }
+              }
+            
+              window.addEventListener("load", initVanta);
+            </script>
+            
+
           </div>
 
           </div>
