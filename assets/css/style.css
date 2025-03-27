@@ -1578,3 +1578,8 @@ section {
     width: 100%;
   }
 }
+
+#vanta-contact {
+  min-height: 300px;
+  height: auto;
+}

@@ -13,9 +13,13 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    
+   
+    <!-- Three.js (must come first) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+
+<!-- Vanta Effect (e.g., GLOBE, NET, WAVES, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
 
     <!-- Google Fonts -->
     <link
@@ -75,10 +79,10 @@
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About Us</a></li>
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li>
+            <!-- <li>
               <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
             </li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
             <!-- <li class="dropdown">
               <a href="#"
                 ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
@@ -1084,7 +1088,7 @@
     <script src="assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-<script>
+<!-- <script>
   VANTA.GLOBE({
     el: "#vanta-contact",
     mouseControls: true,
@@ -1099,7 +1103,24 @@
     color2: 0xffffff,
     size: 1
   })
+</script> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    VANTA.GLOBE({
+      el: "#vanta-contact",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x23153c,
+    color: 0xff3f81,
+    color2: 0xffffff,
+    size: 1
+    });
+  });
 </script>
-
   </body>
 </html>
